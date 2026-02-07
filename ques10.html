@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table with Colspan & Rowspan</title>
+    <style>
+        table {
+            border-collapse: collapse; /* neat borders */
+            width: 60%;
+            border: 2px solid black;
+            border-spacing: 5px; /* cell spacing */
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px; /* cell padding */
+            text-align: center;
+        }
+        th {
+            background-color: palevioletred;
+            color: aliceblue;
+        }
+        td {
+            background-color: white;
+            color:blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h2>Items Table</h2>
+    <table>
+        <tr>
+            <th>Item Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Pen Set</td> <!-- rowspan used -->
+            <td>2</td>
+            <td>&#8377; 20</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>&#8377; 30</td>
+        </tr>
+
+        <tr>
+            <td>Scale</td>
+            <td>2</td>
+            <td>&#8377; 10</td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><b>Total</b></td> <!-- colspan used -->
+            <td><b>&#8377; 60</b></td>
+        </tr>
+    </table>
+</body>
+</html>
